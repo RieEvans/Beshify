@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ColorModeToggle } from "./Components/colorModeToggle";
-import CardComponents from "./Components/cardComponents";
+import { Cards } from "./Components/CardComponent";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -50,7 +50,7 @@ export default function App() {
             <ColorModeToggle toggle = {toggle} setToggle = {setToggle} toggleMode = {toggleMode} />
             
         </div>
-        {text.length > 0 && <CardComponents text = {text} generateText = {generateText} copyText = {copyText} /> }
+        {text.length > 0 && <Cards text = {text} generateText={generateText} copyText={copyText} /> }
 
         <ToastContainer />
         

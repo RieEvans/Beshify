@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CardComponents = ({text, generateText, copyText}) => {
+export const Cards = ({copyText, generateText}) => {
   return (
     <div className=' rounded-xl'>
         <div className='px-5 bg-slate-600 flex items-center justify-between rounded-t-xl'>
@@ -15,5 +15,3 @@ const CardComponents = ({text, generateText, copyText}) => {
     </div>
   )
 }
-
-export default CardComponents
